@@ -70,7 +70,7 @@ class CourseController extends ActiveController
 
     }
 
-    public function actionCourse($id)
+    public function actionTitle($id)
     {
         $coursemodel = new $this->modelClass;
         $recs = $coursemodel::find()->select(['title'])->where(['id' => $id])->one();

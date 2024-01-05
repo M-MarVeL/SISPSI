@@ -65,7 +65,7 @@ return [
               ],
               'extraPatterns' => [
                 'GET courses' => 'courses',
-                'GET {id}/course' => 'course',
+                'GET {id}/title' => 'title',
                 'GET courses/search/{course_name}/{course_category}/{course_difficulty}/{course_price}' => 'searchcourse',
                 'POST courses/purchase' => 'purchasecourse',
               ],
