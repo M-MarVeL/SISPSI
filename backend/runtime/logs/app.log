@@ -1,0 +1,1595 @@
+2024-01-05 20:12:03 [127.0.0.1][-][l5docafbr9haijiofs3a2j5km3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\rest\UrlRule::0 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\BaseYii.php(558): yii\base\BaseObject->__set('0', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\rest\UrlRule), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\rest\\UrlRul...', Array, Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\rest\\UrlRul...', Array, Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\UrlManager.php(246): yii\BaseYii::createObject(Array)
+#7 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#8 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#11 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#14 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(766): yii\di\ServiceLocator->get('urlManager', true)
+#15 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(569): yii\base\Module->get('urlManager')
+#16 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2-debug\src\Module.php(284): yii\base\Application->getUrlManager()
+#17 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(325): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#18 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#19 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#20 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#21 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#22 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->__construct(Array)
+#23 {main}
+2024-01-05 20:12:03 [127.0.0.1][-][l5docafbr9haijiofs3a2j5km3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ddb985f0727d6521d51e5b3a779815854046cc1c10a6967da0517edacdb4d38aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[8,\"DMUq1GBqARwEjHcHWvjH-pxPCBVBiXDf\",2592000]\";}'
+    '_identity-frontend' => '59a8b182f26c6845e4848aa5ef5c7b9b933486d2a2dcc4c7ca1b68504c96961ca:2:{i:0;s:18:\"_identity-frontend\";i:1;s:47:\"[12,\"wd7Mj6hSmT_qk2m0tiZkSc3u-zjtRJ_M\",2592000]\";}'
+    'PHPSESSID' => '00flld8tiuktkjddni7qms4uuo'
+    'advanced-frontend' => '35rdbp6aa2mnjugph46eeiks9h'
+    '_csrf-frontend' => 'f5d7f9e6cf32b2ff4319bbbffac3a20788ff91b4e326e805db02afb58ed3ea5ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u04njW9jgXFW-y66SkdXlPMKH8gC_2o7\";}'
+    'advanced-backend' => 'l5docafbr9haijiofs3a2j5km3'
+    '_csrf-backend' => 'b7715eb5e4aef4326f9cd930c12e9ce40bcdb7b91c96e114c217f38e4dc2a44da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"NLi_jstoJITqqULjL25Jpf6UBL-Wve5p\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en;q=0.5,en-US;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_identity-backend=ddb985f0727d6521d51e5b3a779815854046cc1c10a6967da0517edacdb4d38aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B8%2C%22DMUq1GBqARwEjHcHWvjH-pxPCBVBiXDf%22%2C2592000%5D%22%3B%7D; _identity-frontend=59a8b182f26c6845e4848aa5ef5c7b9b933486d2a2dcc4c7ca1b68504c96961ca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wd7Mj6hSmT_qk2m0tiZkSc3u-zjtRJ_M%22%2C2592000%5D%22%3B%7D; PHPSESSID=00flld8tiuktkjddni7qms4uuo; advanced-frontend=35rdbp6aa2mnjugph46eeiks9h; _csrf-frontend=f5d7f9e6cf32b2ff4319bbbffac3a20788ff91b4e326e805db02afb58ed3ea5ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u04njW9jgXFW-y66SkdXlPMKH8gC_2o7%22%3B%7D; advanced-backend=l5docafbr9haijiofs3a2j5km3; _csrf-backend=b7715eb5e4aef4326f9cd930c12e9ce40bcdb7b91c96e114c217f38e4dc2a44da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22NLi_jstoJITqqULjL25Jpf6UBL-Wve5p%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704485523.7597
+    'REQUEST_TIME' => 1704485523
+]
+2024-01-05 20:20:04 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/37/course". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/37/course', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:20:04 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'e0574a64-3d69-447a-bc31-8752f3dc3c86'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61686'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/37/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/37/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486004.0466
+    'REQUEST_TIME' => 1704486004
+]
+2024-01-05 20:21:20 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:21:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '10487beb-dbb3-4834-a6db-1573909f1d1c'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61690'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486080.7514
+    'REQUEST_TIME' => 1704486080
+]
+2024-01-05 20:22:35 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:22:35 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'caa78022-2f89-43de-ba68-83317812aecd'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61700'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486155.6638
+    'REQUEST_TIME' => 1704486155
+]
+2024-01-05 20:23:38 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/37/course". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/37/course', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:23:38 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'abfdfbc3-f5a5-40df-a65b-4282d3f00dc2'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61708'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/37/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/37/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486218.0707
+    'REQUEST_TIME' => 1704486218
+]
+2024-01-05 20:24:14 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/37/courses". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/37/courses', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:24:14 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '8dbb9747-7383-433a-b626-e04c302c18c9'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61714'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/37/courses'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/37/courses'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486254.3159
+    'REQUEST_TIME' => 1704486254
+]
+2024-01-05 20:24:21 [::1][12][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('37')
+#1 [internal function]: yii\rest\ViewAction->run('37')
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/view', Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2024-01-05 20:24:21 [::1][12][-][info][application] $_GET = [
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'd097f3b5-cb30-4c22-bbe9-731fc494364b'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=c6cd8a120ff6b18a30da15258b3fe5ffa368ebba12ae286b0cfc614838c6d0f0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LX1arlY8wMiqqH5YIUfb3ESM7qjPBNNw%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61717'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/courses/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/courses/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486261.4015
+    'REQUEST_TIME' => 1704486261
+]
+2024-01-05 20:26:11 [::1][12][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('37')
+#1 [internal function]: yii\rest\ViewAction->run('37')
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/view', Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2024-01-05 20:26:11 [::1][12][-][info][application] $_GET = [
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'be062e25f720caf5d37d8052ae6b590ad072e145e97193f6e35d1c8f9af38bc2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"o2UMnqNUD9gtZu1WS-jo3KIQe4KPv3SH\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'b07761ba-107b-4b0d-9390-4b26ded6347d'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=be062e25f720caf5d37d8052ae6b590ad072e145e97193f6e35d1c8f9af38bc2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22o2UMnqNUD9gtZu1WS-jo3KIQe4KPv3SH%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61725'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/courses/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/courses/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486371.4163
+    'REQUEST_TIME' => 1704486371
+]
+2024-01-05 20:26:15 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:26:15 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"0Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '8f6f359c-7dff-4b09-9a5c-d2c4af2ef56d'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%220Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61725'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486375.384
+    'REQUEST_TIME' => 1704486375
+]
+2024-01-05 20:26:36 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:26:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"0Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'c3cae0fa-c304-4ad2-8259-70516444b413'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%220Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61730'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486396.972
+    'REQUEST_TIME' => 1704486396
+]
+2024-01-05 20:27:19 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:27:19 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"0Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'a7e9bcd8-c382-40af-9f4e-f7070a91eed2'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%220Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61737'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486439.0084
+    'REQUEST_TIME' => 1704486439
+]
+2024-01-05 20:27:27 [::1][12][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('37')
+#1 [internal function]: yii\rest\ViewAction->run('37')
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/view', Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2024-01-05 20:27:26 [::1][12][-][info][application] $_GET = [
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"0Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'ae35d5f9-3bb1-4f2e-bc15-ac2613979182'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=bddb29dff30a86d3d597415d308b21a98d25b118e55dddad1e3a4f030b631024a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%220Enh_5Mjya-qRE5TpcXVGsx0vZ9ItiZo%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61740'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/courses/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/courses/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486446.8758
+    'REQUEST_TIME' => 1704486446
+]
+2024-01-05 20:29:42 [::1][12][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('37')
+#1 [internal function]: yii\rest\ViewAction->run('37')
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/view', Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2024-01-05 20:29:42 [::1][12][-][info][application] $_GET = [
+    'id' => '37'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '8b1f020c818cb5aaef43a64976f69c03957b5aba1a34116cd14897ca14ce93c2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"DVsiraf3_72aUgTflPSDGEv780mNlrJi\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '1bef655b-4edc-48ea-83ae-789036781e9b'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=8b1f020c818cb5aaef43a64976f69c03957b5aba1a34116cd14897ca14ce93c2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22DVsiraf3_72aUgTflPSDGEv780mNlrJi%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61750'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/courses/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/courses/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486582.1969
+    'REQUEST_TIME' => 1704486582
+]
+2024-01-05 20:29:47 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/coursee/37". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/coursee/37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:29:47 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'beab5b83-5d08-4ae0-80d0-772096223a43'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61754'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/coursee/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/coursee/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486587.6955
+    'REQUEST_TIME' => 1704486587
+]
+2024-01-05 20:29:51 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:29:51 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '1e0d80b8-c90e-4b83-83bb-c01894b4f31a'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61754'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486591.5117
+    'REQUEST_TIME' => 1704486591
+]
+2024-01-05 20:30:02 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:30:02 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '6edf3622-fe09-4457-8074-39fec7b18316'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61759'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486602.7587
+    'REQUEST_TIME' => 1704486602
+]
+2024-01-05 20:30:29 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/37/course". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/37/course', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:30:29 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'c69291d8-fadd-479b-b3eb-44dae8fa2a57'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61766'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/37/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/37/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704486629.9492
+    'REQUEST_TIME' => 1704486629
+]
+2024-01-05 20:36:55 [::1][12][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: course in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('course')
+#1 [internal function]: yii\rest\ViewAction->run('course')
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array(Array, Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams(Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#5 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/view', Array)
+#6 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2024-01-05 20:36:55 [::1][12][-][info][application] $_GET = [
+    'id' => 'course'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '1297c00d-891e-4a77-88b6-acc3913a7c8c'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=22524b28f21babc5e8ac3aa81793d4210137e83685ec6ec14d564f72cb7ffc70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22c2iqGeNcXH2x3Fv_77Hlis5kc9BR1Eke%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61787'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/courses/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/courses/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487015.0375
+    'REQUEST_TIME' => 1704487015
+]
+2024-01-05 20:37:06 [::1][12][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Controller.php:199
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('course', Array)
+#3 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/cour...', Array)
+#4 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2024-01-05 20:37:06 [::1][12][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'f128d951994a5ce2186eba299e11d7022e22047da85c966e9f453dee2aaba799a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"7-QxVAt3pzJoBIuBO-oNe9bDtl0FMl34\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'ab770e35-676b-4eaf-998e-9bef230e3472'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=f128d951994a5ce2186eba299e11d7022e22047da85c966e9f453dee2aaba799a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%227-QxVAt3pzJoBIuBO-oNe9bDtl0FMl34%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61793'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487026.5316
+    'REQUEST_TIME' => 1704487026
+]
+2024-01-05 20:37:26 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:37:26 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'e546381ccea5e7c3422d003b037327fb187469e9ba619af98bf45d33d090221ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vxxcSs9CzBGpHLImzN-FRoecrELMAVBQ\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '897408c8-31bc-432e-af0d-13eccff34b9e'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=e546381ccea5e7c3422d003b037327fb187469e9ba619af98bf45d33d090221ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vxxcSs9CzBGpHLImzN-FRoecrELMAVBQ%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61804'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487046.189
+    'REQUEST_TIME' => 1704487046
+]
+2024-01-05 20:37:30 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/course/37/course". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37/c...', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:37:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'e546381ccea5e7c3422d003b037327fb187469e9ba619af98bf45d33d090221ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"vxxcSs9CzBGpHLImzN-FRoecrELMAVBQ\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => 'cdc080ac-5196-4b78-ac76-3af0eb251a8c'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=e546381ccea5e7c3422d003b037327fb187469e9ba619af98bf45d33d090221ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22vxxcSs9CzBGpHLImzN-FRoecrELMAVBQ%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61804'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37/course'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487050.5216
+    'REQUEST_TIME' => 1704487050
+]
+2024-01-05 20:38:21 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/course/course/37". in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/cour...', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:38:21 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '0ea313b1-5105-4919-a6d9-4bb6729cda46'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61816'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487101.609
+    'REQUEST_TIME' => 1704487101
+]
+2024-01-05 20:39:33 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/mula in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('mula', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/mula', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:39:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '7a09e3e5-14b8-40df-9854-22909058baf5'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61822'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/mula'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/mula'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487173.5132
+    'REQUEST_TIME' => 1704487173
+]
+2024-01-05 20:39:37 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/course/37 in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('37', Array)
+#1 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('api/course/37', Array)
+#2 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\SISPSI\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 20:39:37 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => '5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr\";}'
+    '_csrf-frontend' => '36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YFtaUEv-XhadR11Bgewo1IP0ASG0awj_\";}'
+    'advanced-frontend' => 'mo9d3aodq6d9blar79h3ufk3o2'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.36.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_POSTMAN_TOKEN' => '553a58f1-8244-4b00-9039-cb39c83127c0'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf-backend=5e06d263fa4b22df9cc6f79ffae7862bf9b51ac89b569d6f9adbfe91c99904c2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22iXnAh7IjY7popIPfOu5A9uHC7_HKGhCr%22%3B%7D; _csrf-frontend=36193102c7442ed7221168b42c81dd1f4e8d04ba8dcd6861af6dc72ea9c02c5aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YFtaUEv-XhadR11Bgewo1IP0ASG0awj_%22%3B%7D; advanced-frontend=mo9d3aodq6d9blar79h3ufk3o2'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft\\jdk-11.0.16.101-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git LFS;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) PHP/8.0.30 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/SISPSI/backend/web/index.php'
+    'REMOTE_PORT' => '61822'
+    'REDIRECT_URL' => '/SISPSI/backend/web/api/course/37'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SISPSI/backend/web/api/course/37'
+    'SCRIPT_NAME' => '/SISPSI/backend/web/index.php'
+    'PHP_SELF' => '/SISPSI/backend/web/index.php'
+    'PHP_AUTH_USER' => '***'
+    'PHP_AUTH_PW' => '***'
+    'REQUEST_TIME_FLOAT' => 1704487177.2734
+    'REQUEST_TIME' => 1704487177
+]
