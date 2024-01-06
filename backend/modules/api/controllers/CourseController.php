@@ -62,13 +62,58 @@ class CourseController extends ActiveController
     }
 
 
-    public function actionCourses()
-    {
+    // CRUD Functions
+ 
+    public function actionCourses() {
         $courses = new $this->modelClass;
         $recs = $courses::find()->all();
         return $recs;
 
     }
+
+    public function actionCreateCourses() {
+        $courses = new $this->modelClass;
+        $courses->load(Yii::$app->request->post(), '');
+        $courses->save();
+        return $courses;
+    }
+
+    public function actionUpdateCourses(){
+      
+      $model = $this->findModel(Yii::$app->request->post('id'));
+
+      $model->load(Yii::$app->request->post(), '');
+
+      if($model->save() && $model->validate())
+      {
+        return $model;
+      }
+      else
+      {
+        return $model->getErrors();
+      }
+    }
+
+    // Auxiliar Function that find a model based on the id provided
+    private function findModel($id)
+    {
+        $courses = new $this->modelClass;
+        if (($model = $courses::findOne($id)) !== null) {
+            return $model;
+        }
+        throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+  
+    public function actionDeleteCourses($id) {
+        $courses = new $this->modelClass;
+        $recs = $courses::find()->where(['id' => $id])->one();
+        $recs->delete();
+        return $recs;
+    }
+
+
+    // Custom Functions
 
     public function actionTitle($id)
     {
