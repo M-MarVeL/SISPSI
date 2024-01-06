@@ -114,9 +114,17 @@ class CourseController extends ActiveController
     {
         $request = Yii::$app->request;
         if(!$request->isPost) return "Only POST method is allowed";
-         
-        $user_id = $request->post('user_id');
-        $course_id = $request->post('course_id');
+
+        $cartModel = new Cart();
+        $cartData = $cartModel->find()->where(['user_id' => $request->post('user_id'), 'course_id' => $request->post('course_id')])->one();
         
+        if($cartData) return "Course already purchased";
+
+        $cartModel->user_id = $request->post('user_id');
+        $cartModel->course_id = $request->post('course_id');
+        
+        $cartModel->save();
+        
+        return $cartModel;
     }
 }
