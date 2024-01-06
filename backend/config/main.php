@@ -53,7 +53,7 @@ return [
           'enablePrettyUrl' => true,
           'showScriptName' => false,
           'rules' => [ 
-            [
+                [
               'class' => 'yii\rest\UrlRule',
               'controller' => ['api/course'],
               'tokens' => [ 
@@ -64,11 +64,12 @@ return [
                 '{course_price}' => '<course_price:\\w+>'
               ],
               'extraPatterns' => [
-                'GET courses' => 'getcourses',
-                'GET {id}/courses' => 'getcourse',
+                'GET courses' => 'courses',
+                'GET {id}/title' => 'title',
                 'GET courses/search/{course_name}/{course_category}/{course_difficulty}/{course_price}' => 'searchcourse',
                 'POST courses/purchase' => 'purchasecourse',
               ],
+                    ],
               [
                 'class' => 'yii\rest\UrlRule',
                 'controller' => 'api/cart',
@@ -78,11 +79,11 @@ return [
                 'extraPatterns' => [
 
                 ],
-              ]
+              ],
             ],
 
           ],
-        ],
+
     ],
     'params' => $params,
 ];

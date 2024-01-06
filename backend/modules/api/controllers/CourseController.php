@@ -2,12 +2,16 @@
 
 namespace backend\modules\api\controllers;
 
+use common\models\Course;
+use common\models\User;
 use yii\filters\auth\HttpBasicAuth;
 use yii\rest\ActiveController;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 use yii\backend\modules\api\components\CustomAuth;
 use common\models\Cart;
+
+use Yii;
 
 /**
  * Default controller for the `api` module
@@ -58,7 +62,7 @@ class CourseController extends ActiveController
     }
 
 
-    public function actionGetCourses()
+    public function actionCourses()
     {
         $courses = new $this->modelClass;
         $recs = $courses::find()->all();
@@ -66,10 +70,11 @@ class CourseController extends ActiveController
 
     }
 
-    public function actionGetCourse($id)
+    public function actionTitle($id)
     {
-        $course = Course::findOne($id);
-        return $course;
+        $coursemodel = new $this->modelClass;
+        $recs = $coursemodel::find()->select(['title'])->where(['id' => $id])->one();
+        return $recs;
     }
 
     public function actionCreateCourse()
