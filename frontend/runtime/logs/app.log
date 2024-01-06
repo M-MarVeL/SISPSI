@@ -1,0 +1,1218 @@
+2024-01-05 18:58:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-3.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50195'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481095.7972
+    'REQUEST_TIME' => 1704481095
+]
+2024-01-05 18:58:16 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-1.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50193'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481095.7962
+    'REQUEST_TIME' => 1704481095
+]
+2024-01-05 18:58:16 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-2.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50194'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481095.7972
+    'REQUEST_TIME' => 1704481095
+]
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-1.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50198'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481121.6847
+    'REQUEST_TIME' => 1704481121
+]
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-2.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50200'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481121.6872
+    'REQUEST_TIME' => 1704481121
+]
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-3.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 18:58:41 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50201'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481121.6892
+    'REQUEST_TIME' => 1704481121
+]
+2024-01-05 18:59:05 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on null in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\rbac\DbManager.php:873
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\rbac\DbManager.php(873): yii\web\ErrorHandler->handleError(code: '2', message: ''Attempt to rea...', file: ''C:\\\\wamp64\\\\ww...', line: '873')
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\models\SignupForm.php(84): yii\rbac\DbManager->assign(role: 'NULL', userId: '18')
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\controllers\SiteController.php(158): frontend\models\SignupForm->signup()
+#3 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\SiteController->actionSignup()
+#4 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\InlineAction.php:57}(callback: '[0 => class fro...', args: '[]')
+#5 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(params: '[]')
+#6 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php(552): frontend\controllers\SiteController->runAction(id: ''signup'', params: '[]')
+#7 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\web\Application->runAction(route: ''site/signup'', params: '[]')
+#8 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(request: 'class yii\\web\\R...')
+#9 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\web\Application->run()
+#10 {main}
+2024-01-05 18:59:03 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'U8VKlk4QT4myiLBiaeDtp9mSC4_pl9E6VKfGRLuGM2wdiDqgD30a6If74A8ekrvyjuVCua7Pgkst_44X9PUBGQ=='
+    'SignupForm' => [
+        'username' => 'rubinho'
+        'name' => 'rubinho'
+        'address' => 'rubinho'
+        'phone_number' => '123456789'
+        'email' => 'rubinho@email.com'
+        'password' => '12345678'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '331'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50204'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481143.8484
+    'REQUEST_TIME' => 1704481143
+]
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-2.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50237'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481378.184
+    'REQUEST_TIME' => 1704481378
+]
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-3.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50238'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481378.1909
+    'REQUEST_TIME' => 1704481378
+]
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-1.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:02:58 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50236'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481378.183
+    'REQUEST_TIME' => 1704481378
+]
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-1.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50243'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481389.3477
+    'REQUEST_TIME' => 1704481389
+]
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-3.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50241'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481389.3497
+    'REQUEST_TIME' => 1704481389
+]
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-2.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:09 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50244'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481389.3477
+    'REQUEST_TIME' => 1704481389
+]
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-1.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50247'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-1.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481395.7316
+    'REQUEST_TIME' => 1704481395
+]
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-2.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50249'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-2.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481395.7332
+    'REQUEST_TIME' => 1704481395
+]
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/img/course-3.jpg". in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/img/course...', Array)
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\PWS\2Ano\SIS\API\SISPSI\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-05 19:03:15 [127.0.0.1][-][653bj6tnv19b1u0h1gpbcqjtpj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"UKgm9scXai4-f6qa89dMWla7tlNqIXsZ\",2592000]\";}'
+    'advanced-frontend' => '653bj6tnv19b1u0h1gpbcqjtpj'
+    '_csrf-frontend' => 'ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Brave\";v=\"120\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '_identity-backend=c565beba1d5267728a2ddc1360fc6f0d51aadf8d888a6959e5cda045ddedb8c5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22UKgm9scXai4-f6qa89dMWla7tlNqIXsZ%22%2C2592000%5D%22%3B%7D; advanced-frontend=653bj6tnv19b1u0h1gpbcqjtpj; _csrf-frontend=ef20bb6919fa3456adce8289ba4a26799b5a1efc496481ce7552916b9d9caa63a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22NMp6AmUa5sPmwrVUWwI6GXSqyXHSOs2u%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Code\\Prog\\CMake\\cmake\\bin;C:\\Code\\Prog\\MinGW\\mingw\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\xampp\\php;C:\\composer;C:\\Program Files\\nodejs\\;C:\\MinGW\\bin;C:\\Program Files\\starship\\bin\\;C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\;C:\\Program Files\\CMake\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\160\\DTS\\Binn\\;C:\\Program Files\\Gradle\\gradle-8.3\\bin;C:\\Program Files\\PowerShell\\7-preview\\preview;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\mosquitto;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) PHP/8.2.0 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REMOTE_PORT' => '50250'
+    'REDIRECT_URL' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/site/img/course-3.jpg'
+    'SCRIPT_NAME' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'PHP_SELF' => '/PWS/2Ano/SIS/API/SISPSI/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1704481395.7332
+    'REQUEST_TIME' => 1704481395
+]
