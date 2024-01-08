@@ -76,33 +76,58 @@ return [
             'GET courses/search/{course_name}/{course_category}/{course_difficulty}/{course_price}' => 'searchcourse',
             'POST courses/purchase' => 'purchasecourse',
           ],
-        ],
-        [
-          // Cart API routes
-          'class' => 'yii\rest\UrlRule',
-          'controller' => 'api/cart',
-          'tokens' => [
-            '{id}' => '<id:\\w+>'
+          [
+            // Cart API routes
+            'class' => 'yii\rest\UrlRule',
+            'controller' => 'api/cart',
+            'tokens' => [
+              '{id}' => '<id:\\w+>'
+            ],
+            'extraPatterns' => [
+              'POST cart' => 'addcart',
+              'DELETE cart/{id}' => 'deletecart',
+              'GET cart/{id}' => 'getcart',
+            ],
           ],
-          'extraPatterns' => [
+          [
+            // User API routes
+            'class' => 'yii\rest\UrlRule',
+            'controller' => 'api/user',
+            'tokens' => [
+              '{id}' => '<id:\\w+>'
+            ],
+            'extraPatterns' => [
 
+            ],
           ],
-        ],
-        [
-          // User API routes
-          'class' => 'yii\rest\UrlRule',
-          'controller' => 'api/user',
-          'tokens' => [
-            '{id}' => '<id:\\w+>'
+          [
+            // Favourties API routes
+            'class' => 'yii\rest\UrlRule',
+            'controller' => 'api/favorites',
+            'tokens' => [
+              '{id}' => '<id:\\w+>'
+            ],
+            'extraPatterns' => [
+              'POST favorites' => 'addfavorites',
+              'DELETE favorites/{id}' => 'deletefavorites',
+            ],
           ],
-          'extraPatterns' => [
+          [
+            // Quizzes API routes
+            'class' => 'yii\rest\UrlRule',
+            'controller' => 'api/quizzes',
+            'tokens' => [
+              '{id}' => '<id:\\w+>'
+            ],
+            'extraPatterns' => [
+              'POST quizz/submit' => 'submitquizz',
+            ],
+          ],
 
-          ],
+
+
         ],
       ],
-
     ],
-
-  ],
-  'params' => $params,
+    'params' => $params,
 ];

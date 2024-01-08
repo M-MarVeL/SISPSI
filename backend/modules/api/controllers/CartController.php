@@ -17,9 +17,28 @@ class CartController extends ActiveController
       return $cart;
     }
 
+    public function actionAddCart(){
 
+      $request = Yii::$app->request;
+      $cart_id = $request->post('cart_id');
+      $course_id = $request->post('course_id');
 
+      $cart = Yii::$app->db->createCommand("INSERT INTO cart_items (cart_id, course_id) VALUES ('$cart_id', '$course_id')")->execute();
+      return $cart;
+    }
 
+    public function actionDeleteCart($id){
+
+      $cart = Yii::$app->db->createCommand("DELETE FROM cart_items WHERE id = '$id'")->execute();
+      return $cart;
+    }
+
+    public function actionGetCart($id){
+
+      $cart = Yii::$app->db->createCommand("SELECT * FROM cart_items WHERE cart_id = '$id'")->queryAll();
+      return $cart;
+    }
+}
 
 
 
