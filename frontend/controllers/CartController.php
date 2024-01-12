@@ -132,7 +132,7 @@ class CartController extends Controller
                 // Associando ao pedido criado
                 $modelOrderItem->courses_id = $cartItem->courses_id;
                 $modelOrderItem->price = $cartItem->courses->price;
-                $modelOrderItem->iva_price = $cartItem->courses->price;
+                $modelOrderItem->iva_price = $cartItem->courses->price * ($modelIva->iva / 100);
                 //todo: mudar iva_price para float
 
                 // Outros dados do OrderItem (preço, quantidade, etc.) podem ser definidos aqui

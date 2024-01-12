@@ -4,6 +4,8 @@ namespace backend\modules\api\controllers;
 
 use backend\modules\api\components\CustomAuth;
 use common\models\Course;
+use common\models\Enrollment;
+use common\models\OrderItem;
 use common\models\Section;
 use common\models\User;
 use yii\filters\auth\HttpBasicAuth;
@@ -130,6 +132,51 @@ class CartController extends ActiveController
         $cart->user_id = $user_id;
         $cart->save();
         return $cart;
+    }
+
+    public function actionPayment($id)
+    {
+       $cart = $this->modelClass::find()->where(['user_id' => $id])->one();
+       $order = new \common\models\Order();
+       $modeliva = \common\models\Iva::find()->one();
+
+        if (empty($cart->cartItems)) {
+            return ['error' => 'The cart is empty'];
+        }
+
+       $order->date = date('Y-m-d H:i:s');
+       $order->status = 'PAID';
+       $order->total_price = 0;
+       $order->user_id = $id;
+       $order->iva_id = $modeliva->id;
+       $order->save();
+
+         foreach ($cart->cartItems as $item) {
+
+              $orderItem = new OrderItem();
+              $orderItem->orders_id = $order->id;
+              $orderItem->courses_id = $item->courses_id;
+              $orderItem->price = $item->courses->price;
+              $orderItem->iva_price = $item->courses->price * ($modeliva->iva / 100);
+                $orderItem->save();
+
+             $modelEnrollment = new Enrollment();
+             $modelEnrollment->enrollment_date = date('Y-m-d H:i:s');
+             $modelEnrollment->user_id = $id;
+             $modelEnrollment->courses_id = $item->courses_id;
+             $modelEnrollment->save();
+
+             $order->total_price += $orderItem->price;
+
+            $order->save();
+             $item->delete();
+
+
+         }
+
+
+
+         return $order;
     }
 
 

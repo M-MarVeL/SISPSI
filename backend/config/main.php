@@ -103,12 +103,25 @@ return [
                   'POST {id}/course/{course_id}' => 'additem',
                   'GET {id}'=> 'items',
                   'DELETE {id}/course/{course_id}' => 'removeitem',
-                  'POST createcart'=> 'createcart',],
+                  'POST createcart'=> 'createcart',
+                  'GET payment/{id}'=> 'payment',],
               'tokens' => [
                   '{id}' => '<id:\d+>',
                   '{course_id}' => '<course_id:\d+>',
               ],
-          ]
+          ],
+          [
+              'class' => 'yii\rest\UrlRule',
+              'controller' => 'api/order',
+              'extraPatterns' => [
+                  'GET {id}'=> 'items',
+                  ],
+              'tokens' => [
+                  '{id}' => '<id:\d+>',
+                  '{course_id}' => '<course_id:\d+>',
+              ],
+          ],
+
         ],
       ],
   ],

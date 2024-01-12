@@ -70,30 +70,28 @@ class OrderController extends ActiveController
 
     public function actionItems($id)
     {
-        $order = $this->modelClass::find()->where(['user_id' => $id])->one();
+        $order = $this->modelClass::findOne($id);
 
         if ($order === null) {
             // Handle the case where the cart is not found
-            return [];
+            return ['error' => 'order not found'];
         }
 
-        $items = \common\models\OrderItem::find()->where(['orders_id' => $order->id])->all();
+        $fullOrder = [];
 
-        if (empty($items)) {
-            return [];
-        }
+        foreach ($order->orderItems as $item) {
 
-        $fullorder = [];
-
-        foreach ($items as $item) {
             $fullOrder[] = [
                 'id' => $item->id,
                 'price' => $item->price,
                 'iva_price'=> $item->iva_price,
+
                 // Add other order item attributes as needed
             ];
         }
-        return $fullorder;
+
+        return $fullOrder;
+
     }
 
 
