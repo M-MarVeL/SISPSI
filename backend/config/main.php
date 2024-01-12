@@ -26,6 +26,9 @@ return [
     ],
     'request' => [
       'csrfParam' => '_csrf-backend',
+        'parsers' => [
+            'application/json' => 'yii\web\JsonParser',
+        ],
     ],
     'user' => [
       'identityClass' => 'common\models\User',
@@ -52,8 +55,60 @@ return [
     'urlManager' => [
       'enablePrettyUrl' => true,
       'showScriptName' => false,
-      'rules' => [ 
+      'rules' => [
+          ['class' => 'yii\rest\UrlRule',
+              'controller' => 'api/course',
+              'extraPatterns' => [
+                  'GET search/{title}' => 'search',
+                  'GET {id}' => 'course',
+                  'GET courses'=> 'allcourses',
+                  'POST createcourse'=> 'createcourse',
+                  'PUT updatecourse/{title}'=> 'updatecoursepricebytitle',
+                  'DELETE {title}'=> 'deletecoursebytitle',
+              ],
+              'tokens' => [
+                  '{id}' => '<id:\d+>',
+                  '{title}' => '<title:\w+>', //[a-zA-Z0-9_] 1 ou + vezes (char)
+              ],
+          ],
+          ['class' => 'yii\rest\UrlRule',
+              'controller' => 'api/user',],
 
+          ['class' => 'yii\rest\UrlRule',
+              'controller' => 'api/login',
+              'extraPatterns' => [
+                  'POST login' => 'login',
+              ],
+          ],
+          ['class' => 'yii\rest\UrlRule',
+              'controller' => 'api/lesson',
+              'extraPatterns' => [
+                  'GET lessonsbycourse/{id}' => 'lessonsbycourse',
+                  'GET {id}'=> 'lesson',
+                  'GET {title}'=>'lessonbytitle',
+                  'DELETE {title}'=> 'deletebytitle',
+                  'PUT updatelesson/{title}'=> 'updatecontextbytitle',
+                  'POST createlesson '=>'create',
+              ],
+              'tokens' => [
+                  '{id}' => '<id:\d+>',
+                  '{title}' => '<title:\w+>',
+              ],
+
+          ],
+          [
+              'class' => 'yii\rest\UrlRule',
+              'controller' => 'api/cart',
+              'extraPatterns' => [
+                  'POST {id}/course/{course_id}' => 'additem',
+                  'GET {id}'=> 'items',
+                  'DELETE {id}/course/{course_id}' => 'removeitem',
+                  'POST createcart'=> 'createcart',],
+              'tokens' => [
+                  '{id}' => '<id:\d+>',
+                  '{course_id}' => '<course_id:\d+>',
+              ],
+          ]
         ],
       ],
   ],
