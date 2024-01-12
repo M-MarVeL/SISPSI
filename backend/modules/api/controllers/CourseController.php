@@ -2,16 +2,13 @@
 
 namespace backend\modules\api\controllers;
 
-use common\models\Course;
+use backend\modules\api\components\CustomAuth;
 use common\models\User;
 use yii\filters\auth\HttpBasicAuth;
 use yii\rest\ActiveController;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
-use yii\backend\modules\api\components\CustomAuth;
-use common\models\Cart;
-
-use Yii;
+use yii\web\UploadedFile;
 
 /**
  * Default controller for the `api` module
@@ -26,10 +23,11 @@ class CourseController extends ActiveController
     {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
-            'class' => HttpBasicAuth::class,
-            'auth' => [$this, 'auth'],
+            'class' => CustomAuth::className(),
+            //'auth' => [$this, 'authCustom'],
         ];
         return $behaviors;
+
     }
 
     public function auth($username, $password)
@@ -40,6 +38,15 @@ class CourseController extends ActiveController
             return $user;
         }
         throw new ForbiddenHttpException(('No Authentication'));
+    }
+    public function authCustom($token)
+    {
+        $user_ = User::findIdentityByAccessToken($token);
+        if($user_) {
+            $this->user=$user_; //Guardar user autenticado
+            return $user_;
+        }
+        throw new \yii\web\ForbiddenHttpException('No authentication'); //403
     }
 
     public function checkAccess($action, $model = null, $params = [])
@@ -55,126 +62,130 @@ class CourseController extends ActiveController
             }
         }
     }
- 
     public function actionIndex()
     {
         return $this->render('index');
     }
 
 
-    // CRUD Functions
- 
-    public function actionCourses() {
-        $courses = new $this->modelClass;
-        $recs = $courses::find()->all();
+    public function actionSearch($title)
+    {
+        $course = new $this->modelClass;
+        $recs = $course::find()->where(['like', 'title', $title])->all();
         return $recs;
 
     }
 
-    public function actionCreateCourses() {
-        $courses = new $this->modelClass;
-        $courses->load(Yii::$app->request->post(), '');
-        $courses->save();
-        return $courses;
-    }
-
-    public function actionUpdateCourses(){
-      
-      $model = $this->findModel(Yii::$app->request->post('id'));
-
-      $model->load(Yii::$app->request->post(), '');
-
-      if($model->save() && $model->validate())
-      {
-        return $model;
-      }
-      else
-      {
-        return $model->getErrors();
-      }
-    }
-
-    // Auxiliar Function that find a model based on the id provided
-    private function findModel($id)
+    public function actionAllcourses()
     {
-        $courses = new $this->modelClass;
-        if (($model = $courses::findOne($id)) !== null) {
-            return $model;
+        $courses = $this->modelClass::find()->all();
+        foreach ($courses as $course) {
+            $file = $course->file;
+            $course->file_id = 'http://10.0.2.2/kuicly/frontend/web/uploads/' .     $file->name;
+
         }
-        throw new NotFoundHttpException('The requested page does not exist.');
+        return $courses;
+
     }
 
-  
-    public function actionDeleteCourses($id) {
-        $courses = new $this->modelClass;
-        $recs = $courses::find()->where(['id' => $id])->one();
-        $recs->delete();
-        return $recs;
-    }
-
-
-    // Custom Functions
-
-    public function actionTitle($id)
+    public function actionCourse($id)
     {
-        $coursemodel = new $this->modelClass;
-        $recs = $coursemodel::find()->select(['title'])->where(['id' => $id])->one();
-        return $recs;
+        $course = $this->modelClass::findOne($id);
+        if ($course) {
+            // Acessar a relação 'file' definida no modelo Course
+            $file = $course->file;
+
+
+            if ($file) {
+                // Retornar os detalhes do arquivo
+                return [
+                    'id' => $course->id,
+                    'title' => $course->title,
+                    'description' => $course->description,
+                    'price' => $course->price,
+                    'skill_level' => $course->skill_level,
+                    'img' => 'http://localhost/kuicly/frontend/web/uploads' + $file->name,
+                    // Adicione outros atributos do arquivo conforme necessário
+                ];
+            } else {
+                return ['error' => 'Curso não tem um arquivo associado.'];
+            }
+        } else {
+            return ['error' => 'Curso não encontrado.'];
+        }
     }
 
-    public function actionCreateCourse()
+
+
+
+    public function actionCreatecourse()
     {
-        $request = Yii::$app->request;
-        $course = new Course();
+        $request = \Yii::$app->request;
+        $course = new $this->modelClass();
+
+
+        // Set basic attributes
         $course->title = $request->post('title');
         $course->description = $request->post('description');
-        $course->save();
+        $course->price = $request->post('price');
+        $course->skill_level = $request->post('skill_level');
+        $user_id = $request->post('user_id');
+
+        if ($user_id) {
+            // Assign the category_id attribute in your Course model
+            $course->user_id = $user_id;
+        }
+
+        $file_id = $request->post('file_id');
+
+        if ($file_id) {
+            // Assign the category_id attribute in your Course model
+            $course->file_id = $file_id;
+        }
+        /* if ($modelUpload->upload()){
+             $modelFile->name = $modelUpload->fileName;
+         }
+         $modelFile->save();
+         $course ->file_id = $modelFile->id;*/
+
+        // Handle category assignment (assuming 'category_id' is the name attribute in the form)
+        $category_id = $request->post('category_id');
+        if ($category_id) {
+            // Assign the category_id attribute in your Course model
+            $course->category_id = $category_id;
+        }
+
+        // Save the course
+        if ($course->save()) {
+            return $course;
+        } else {
+            // Handle validation or saving errors
+            return ['error' => $course->errors];
+        }
+    }
+
+    public function actionUpdatecoursepricebytitle($title)
+    {
+        $request = \Yii::$app->request;
+        $newPrice = $request->post('price');
+        $course = $this->modelClass::findOne(['title' => $title]);
+
+        if ($course){
+            $course->price = $newPrice;
+            $course->save();
+        }else{
+            return ['error' => 'Curso não encontrado.'];
+        }
+
+
         return $course;
     }
 
-    public function actionPutCourse($id)
+    public function actionDeletecoursebytitle($title)
     {
-        $request = Yii::$app->request;
-        $course = Course::findOne($id);
-        $course->title = $request->post('title');
-        $course->description = $request->post('description');
-        $course->save();
-        return $course;
-    }
-
-    public function actionDeleteCourse($id)
-    {
-        $course = Course::findOne($id);
+        $course = $this->modelClass::findOne(['title' => $title]);
         $course->delete();
         return $course;
     }
 
-    public function actionSearchCourse($course_name, $course_category, $course_difficulty, $course_price)
-    {
-        $courses = Course::find()
-        ->where(['like', 'title', $course_name])
-        ->andWhere(['like', 'category', $course_category])
-        ->andWhere(['like', 'difficulty', $course_difficulty])
-        ->andWhere(['like', 'price', $course_price])
-        ->andWhere(['like', 'rating', $course_rating])
-        ->all();
-        return $courses;
-    }
-    public function actionPurchaseCourse()
-    {
-        $request = Yii::$app->request;
-        if(!$request->isPost) return "Only POST method is allowed";
-
-        $cartModel = new Cart();
-        $cartData = $cartModel->find()->where(['user_id' => $request->post('user_id'), 'course_id' => $request->post('course_id')])->one();
-        
-        if($cartData) return "Course already purchased";
-
-        $cartModel->user_id = $request->post('user_id');
-        $cartModel->course_id = $request->post('course_id');
-        
-        $cartModel->save();
-        
-        return $cartModel;
-    }
 }
