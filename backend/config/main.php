@@ -100,8 +100,8 @@ return [
               'class' => 'yii\rest\UrlRule',
               'controller' => 'api/cart',
               'extraPatterns' => [
-                  'POST {id}/course/{course_id}' => 'additem',
-                  'GET {id}'=> 'items',
+                  'GET {id}/course/{course_id}' => 'additem',
+                  'GET {id}/items'=> 'items',
                   'DELETE {id}/course/{course_id}' => 'removeitem',
                   'POST createcart'=> 'createcart',
                   'GET payment/{id}'=> 'payment',],
@@ -114,7 +114,9 @@ return [
               'class' => 'yii\rest\UrlRule',
               'controller' => 'api/order',
               'extraPatterns' => [
-                  'GET {id}'=> 'items',
+                  'GET {id}/items'=> 'items',
+                  'GET {id} '=>'order',
+                  'GET allorders'=>'allorders',
                   ],
               'tokens' => [
                   '{id}' => '<id:\d+>',

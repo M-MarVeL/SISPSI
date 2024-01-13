@@ -81,7 +81,7 @@ class CourseController extends ActiveController
         $courses = $this->modelClass::find()->all();
         foreach ($courses as $course) {
             $file = $course->file;
-            $course->file_id = 'http://10.0.2.2/kuicly/frontend/web/uploads/' .     $file->name;
+            $course->file_id = $file->name;
 
         }
         return $courses;
@@ -104,7 +104,7 @@ class CourseController extends ActiveController
                     'description' => $course->description,
                     'price' => $course->price,
                     'skill_level' => $course->skill_level,
-                    'img' => 'http://localhost/kuicly/frontend/web/uploads' + $file->name,
+                    'img' => $file->name,
                     // Adicione outros atributos do arquivo conforme necessário
                 ];
             } else {

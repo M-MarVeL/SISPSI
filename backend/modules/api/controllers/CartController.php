@@ -91,11 +91,14 @@ class CartController extends ActiveController
 
             if ($course) {
                 $courses[] = [
-                    'id' => $course->id,
+                    'id'=>$item->id,
+                    'course_id' => $course->id,
                     'title' => $course->title,
                     'description' => $course->description,
                     'price' => $course->price,
                     'skill_level' => $course->skill_level,
+                    'carrinho_id' => $item->id,
+
                     // Add other course attributes as needed
                 ];
             }

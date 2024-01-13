@@ -94,6 +94,25 @@ class OrderController extends ActiveController
 
     }
 
+    public function actionAllorders()
+    {
+        $orders = $this->modelClass::find()->all();
+        foreach ($orders as $order) {
+            $user = $order->user;
+            $order->user_id = $user->username;
+        }
+        return $orders;
+
+    }
+
+    public function actionOrder($id)
+    {
+        $order = $this->modelClass::findOne($id);
+        $user = $order->user;
+        $order->user_id = $user->username;
+        return $order;
+    }
+
 
 
 
